@@ -21,7 +21,17 @@ var ques9 = "What is your Weight";
 
 var questions = [ ];
 var displayQuestions = function(){
-    
+    var $div = document.getElementById("survey_ques");
+    questions.forEach(aQues){
+        var $quescont = document.createElement("div");
+        var $question = document.createElement("p");
+        
+        var $option = document.createElement("p");
+        
+        $quescount.appendChild($question);
+        $quescount.appendChild($option);
+        $div.appendChild($quescount);
+    }
 };
 
 
