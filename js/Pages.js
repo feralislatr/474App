@@ -4,7 +4,7 @@ var ques1 = "What is your first Name";
 
 var ques2 = "What is your age";
 
-var ques3 = "What is your gender";
+var ques3 = "What is your sex";
 
 var ques4 = "Where do you currently live";
 

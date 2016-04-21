@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+/**{*/
+/*    border:dotted 1px white;*/
+/*}*/
+@font-face{
+    font-family: 'MetalMacabre';
+    src: url('MetalMacabre.ttf'); 
+}
+
+@font-face{
+    font-family: 'Dementia';
+    src: url('Dementia.ttf'); 
+}
+/*cool purple #3d2677*/
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #0d0d0d;
+    color: #fefefe;
+    
+}
+
+section{
+    width:100%;
+    height: 300%;
+    
+}
+
+.content{
+    position: relative;
+    width:90%;
+    top:10%;
+}
+
+h1{
+    font-family: 'MetalMacabre', serif;
+    font-size: 750%;
+    max-width: 70%;
+    margin-bottom:70px;
+    line-height: 110%;
+    animation: glow s infinite alternate;
+
+}
+
+@keyframes glow {
+    to {
+        text-shadow:1px 7px 20px #000;
+    }
+}
+
+.hero{
+    position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+    background:url(/img/deathhero1.jpg) no-repeat top center fixed;
+    background-size: cover;
+	z-index:-1;
+	filter: brightness(20%);
+    height: 200%;
+    width: 100%;
+    
+
+}
+
+.button{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 100%;
+    letter-spacing: 20px;
+    color: #fefefe;
+    background-color:transparent;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding:20px;
+    text-decoration: none;
+    transition: ease .7s;
+    
+}
+
+.button:hover{
+    color:#999;
+    border-color:#999;
+    
+}
+
+.content .ques{
+    font-size: 300%;
+    
+}
+input{
+    display:block;
+    appearance: none;
+    margin-top:50px;
+    margin-bottom:100px;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    color:#fefefe;
+    font-size:200%;
+    width:300px;
+    border:none;
+    border-bottom:solid 2px #fefefe;
+}
+
+#q0{
+    height:400%;
+}
+
+#q0 .hero{
+}
+
+#q1{
+    background-color: #0d0d0d;
+}
+
+#q2{
+    
+}
+
+#q3{
+    
+}
+
+#q4{
+    
+}
