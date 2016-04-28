@@ -50,7 +50,7 @@ var displayQuestions = function(){
         $question.innerHTML = aQues.question;
         var $response = document.createElement("input");
         $response.addEventListener("blur",function(ev){
-            aQues.answer =
+            aQues.answer = $response.value();
         });
         $quescount.appendChild($question);
         $quescount.appendChild($response);
