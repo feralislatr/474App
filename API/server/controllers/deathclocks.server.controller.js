@@ -12,13 +12,20 @@ var path = require('path'),
   */
   var MongoClient = require('mongodb').MongoClient
   var assert = require('assert');
-  
-var url = 'mongodb://localhost:27017';
+  var Deathclock;
+var url = 'mongodb://localhost:27017/deathTree';
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
+  db.collection
   console.log("Connected correctly to server.");
+  
+  //stuff
+  var collection = db.collection('tree');
+  
   db.close();
 });
+
+
 
 /**
  * Create a Deathclock

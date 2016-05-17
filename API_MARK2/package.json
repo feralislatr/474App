@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "a new api",
+  "main": "index.js",
+  "author": "Ryan Serva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1"
+  }
+}
