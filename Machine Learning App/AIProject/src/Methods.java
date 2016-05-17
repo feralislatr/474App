@@ -3,12 +3,15 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Map.Entry;
+import com.mongodb.*;
 
 
 
@@ -191,6 +194,41 @@ public class Methods {
 			os.write("\n");
 			printFileHelper(n.getChildOne(), os, tabs+1);
 			printFileHelper(n.getChildTwo(), os, tabs+1);
+		}
+	}
+	
+	public static void PrintTreeToMongoDB(Node n) throws UnknownHostException{
+		MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
+		DB db = mongoClient.getDB( "deathTree" );
+		DBCollection col = db.getCollection("tree");
+		DFS(n, col);
+	}
+	static int counter=0;
+	private static int DFS(Node n, DBCollection db ){
+		if(n.isGoal()){
+			int curcounter = counter;
+			counter++;
+			BasicDBObject doc = new BasicDBObject("_id", curcounter)
+			        .append("feature", n.getFeature())
+			        .append("splitvalue", n.getSplitVal())
+			        .append("goal", n.isGoal())
+					.append("lchild", -1)
+					.append("rchild", -1)
+					.append("goalcategory", n.goalCategory());
+			db.insert(doc);
+			return curcounter;
+		}else{
+			int curcounter = counter;
+			counter++;
+			BasicDBObject doc = new BasicDBObject("_id", curcounter)
+			        .append("feature", n.getFeature())
+			        .append("splitvalue", n.getSplitVal())
+			        .append("goal", n.isGoal())
+					.append("lchild",DFS(n.getChildOne(), db))
+					.append("rchild",DFS(n.getChildTwo(), db))
+					.append("goalcategory", -1);
+			db.insert(doc);
+			return curcounter;
 		}
 	}
 	
