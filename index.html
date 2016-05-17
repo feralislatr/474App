@@ -9,6 +9,7 @@
         <title>dethcalc</title>
     </head>
     <body>
+        <div id="page1">
         <div  id="q0">
             <div id="q0hero"></div>
                 <h1>
@@ -24,7 +25,7 @@
          <section id="q1">
             <div class="content">
                 <div class="ques">
-                    What is your first name?
+                    What is your name?
                 </div>
                 
                 <input type="text">
@@ -40,11 +41,14 @@
              <div id="q2hero"></div>
             <div class="content">
                 <div class="ques">
-
                    What is your sex?
-
                 </div>
-                <input type="text">
+                
+                  <select id="sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
                 
                 <a class="button move" href="#q3">
                     descend
@@ -54,12 +58,13 @@
         
         
         <section id="q3">
+            
             <div class="content">
                 <div class="ques">
-                    What is your gender?
+                    What is your age?
                 </div>
-
-                <input type="text"/>
+                
+                <input type="number" id="age">
                 
                 <a class="button move" href="#q4">
                     descend
@@ -71,9 +76,11 @@
             <div id="q4hero"></div>
             <div class="content">
                 <div class="ques">
-                     What is your marital status?   
+                    How many years of post-secondary education do you have?
                 </div>
-                <input type="text"/>
+
+                <input type="number"/>
+               
                 
                 <a class="button move" href="#q5">
                     descend
@@ -83,69 +90,46 @@
         
         <section id="q5">
             <div class="content">
-                <div class="ques">
-                    Where do you currently live?
+                 <div class="ques">
+                     What is the current month?   
                 </div>
-                
-                <input type="text">
-                
-                <a class="button move" href="#q6">
-                    descend
-                </a>
-            </div>
-        </section>
-        
-        <section id="q6">
-            <div id="q6hero"></div>
-            <div class="content">
-                <div class="ques">
-                    Which days of the week do you exercise?
-                </div>
-                
-                <input type="text">
-                
-                <a class="button move" href="#q7">
-                    descend
-                </a>
-            </div>
-        </section>
-        
-        <section id="q7">
-            <div class="content">
-                <div class="ques">
-                   What is your height?
-                </div>
-                
-                <input type="text" id="height">
-                
-                <a class="button move" href="#q8">
-                    descend
-                </a>
-            </div>
-        </section>
-        
-        
-        <section id="q8">
-            <div id="q8hero"></div>
-            <div class="content">
-                <div class="ques">
-                    What is your weight?
-                </div>
-                
-                <select id="weight">
-                    <option>Less than 100 lbs.</option>
-                    <option>100 - 150 lbs.</option>
-                    <option>150 - 200 lbs.</option>
-                    <option>200 - 250 lbs.</option>
+                 <select id="month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
                 </select>
                 
-                <a class="button move" href="#q0">
-                    descend
+                <a class="button" id="scroll" href="#page2" onclick="scroll()">
+                    next
                 </a>
             </div>
         </section>
         
+      </div><!--page1-->
       
+      <div id="page2" class="hidden">
+          <div id="results">
+              <h2>Results</h2>
+              <p>Cause of death: Suicide</p>
+              
+          </div>
+          
+          
+          <!--<section>-->
+              
+          <!--</section>-->
+          
+          
+      </div><!-- page2 -->
         
     </body>
 </html>
