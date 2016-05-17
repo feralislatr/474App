@@ -17,6 +17,7 @@ public class main {
 			//Methods.printTree(n);
 			try{
 				Methods.printTreeToFile(n, "tree.txt");
+				Methods.PrintTreeToMongoDB(n);
 				Methods.PrintAnswer(n, "ryan.txt");
 			}catch(Exception e){
 				e.printStackTrace();
