@@ -2,7 +2,7 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var url = 'mongodb://localhost:27017/deathTree';
 
-
+//localhost:28107/getDeath
 var appRouter = function(app) {
     app.get("/getDeath", function(req, res) {
         MongoClient.connect(url, function(err,db) {
