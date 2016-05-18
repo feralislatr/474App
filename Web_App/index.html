@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <!--<script src="js/Profile.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/scroll.js"></script>
+        <!--<script src="js/Pages.js"></script>-->
+        <title>dethcalc</title>
+    </head>
+    <body>
+        <div id="page1">
+        <div  id="q0">
+            <div id="q0hero"></div>
+                <h1>
+                    how will<br> you die?
+                </h1>
+                
+                <a class="button move" href="#q1">
+                    descend
+                </a>
+        </div>
+
+        
+         <section id="q1">
+            <div class="content">
+                <div class="ques">
+                    What is your name?
+                </div>
+                
+                <input type="text">
+                
+                <a class="button move" href="#q2">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+      
+        <section id="q2">
+             <div id="q2hero"></div>
+            <div class="content">
+                <div class="ques">
+                   What is your sex?
+                </div>
+                
+                  <select id="sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                
+                <a class="button move" href="#q3">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+        
+        <section id="q3">
+            
+            <div class="content">
+                <div class="ques">
+                    What is your age?
+                </div>
+                
+                <input type="number" id="age">
+                
+                <a class="button move" href="#q4">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+        <section id="q4">
+            <div id="q4hero"></div>
+            <div class="content">
+                <div class="ques">
+                    How many years of post-secondary education do you have?
+                </div>
+
+                <input type="number"/>
+               
+                
+                <a class="button move" href="#q5">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+        <section id="q5">
+            <div class="content">
+                 <div class="ques">
+                     Choose the month of death   
+                </div>
+                 <select id="month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                
+                <a class="button" id="scroll" href="#page2" onclick="scroll()">
+                    next
+                </a>
+            </div>
+        </section>
+        
+      </div><!--page1-->
+      
+      <div id="page2" class="hidden">
+          <div id="resulthero"></div>
+          <div id="results">
+              <h2>Results</h2>
+              <p>Cause of death: <br> <span>{{result}}</span></p>
+              <a class="button" id="back" href="#page1">
+                  back
+              </a>
+              
+         </div>
+          
+          
+          <!--<section>-->
+              
+          <!--</section>-->
+          
+          
+      </div><!-- page2 -->
+        
+    </body>
+</html>
