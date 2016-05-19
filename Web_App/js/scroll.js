@@ -16,19 +16,6 @@ $(function() {
 	});
 });
 
-
-
-//horizontal scroll
-// $(function() {
-//     $("#scroll").click(function(e) {
-//       console.log("horizontalscroll");
-//         e.preventDefault();
-//         $('#page2').animate({
-//             scrollLeft: $('#page2').scrollLeft() + $(this.hash).offset().left
-//         }, 500);
-//     });
-// });
-
 function scroll(){
     console.log("i work1");
     $("#page1").animate({left:'-1000px'},10000,'easeInOutExpo');
@@ -43,6 +30,7 @@ function handleHash(){
   $('body').html($(location.hash).html());
   
 }
+
 $(window).on("hashchange", handleHash);
 $('#back').on('click',handleHash);
-  
+ 
