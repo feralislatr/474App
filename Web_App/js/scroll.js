@@ -26,10 +26,28 @@ function scroll(){
 
 //page change
 function handleHash(){
-  $(location.hash).removeClass('hidden');
-  $('body').html($(location.hash).html());
-  
-}
+     var a1 = $('#a1').val(); //name
+     console.log("a1: "+ a1);
+     var a2 = $('#a2').val(); //sex
+     console.log("a2: "+ a2);
+     var a3 = $('#a3').val(); //age
+     console.log("a3: "+ a3);
+     var a4 = $('#a4').val(); //education years
+     console.log("a4: "+ a4);
+     var a5 = $('#a5').val(); //current month
+     console.log("a5: "+ a5);
+      if(a1 && a2 && a3 && a4 && a5){
+    $(location.hash).removeClass('hidden');
+    $('body').html($(location.hash).html());
+      }
+      else{
+      if(parent.location.hash != ''){
+        alert("Fill out all the forms so you can die properly");
+      }
+      parent.location.hash = '';
+     
+        }
+      }
 
 $(window).on("hashchange", handleHash);
 $('#back').on('click',handleHash);
