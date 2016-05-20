@@ -1,5 +1,6 @@
 //api interaction//
 
+
 var app = angular.module('myApp', []);
 
 app.controller('myCtrl', function($scope, $http) {
@@ -26,7 +27,9 @@ app.controller('myCtrl', function($scope, $http) {
            
         $http.get(nurl)
         .then(function(response) {
+            console.log("response:"+response.data.message);
             $scope.result = response.data.message;
+            $("#result").html(response.data.message);
             });
         }
 });

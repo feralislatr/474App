@@ -55,6 +55,8 @@ var answerFinder = function(collection, req, curID, res){
         curNode = item;
         console.log("curnode id:"+curNode._id);
         if(curNode.goal){
+        	res.setHeader("Access-Control-Allow-Origin", "*");
+    		res.setHeader("Access-Control-Allow-Methods", "PUT, GET, OPTIONS, HEAD");
             console.log("goal:"+curNode.goalcategory);
             switch (curNode.goalcategory){
 			    case 1:
