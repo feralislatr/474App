@@ -27,3 +27,9 @@ We saved this decision tree in a mongodb. Each node is represented as an entry, 
 
 When we get a query, we go to the first node of the tree. if the node is not a goal, we check the split category. we then Compare the value of that category in the request with the splitvalue. If the value of the request is lower than the splitvalue, we go to the left child. If the value is greater, we go to the right child. We continue to do this until we hit a goal, when we return the goalcategory. We return this as a JSON object, which is then written to the screen by the WebApp. 
 
+##Group Members
+- Ryan Serva
+- Briana Slater
+- Eluamuno Enenmo
+- Krzysztof Czerwinski
+- David Law
