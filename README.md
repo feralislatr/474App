@@ -2,7 +2,7 @@
 ## Running the APP
 - You have to run the API on a different server than the webapp
 - I will keep the API running on my workspace. However, if you do not get a cause of death, it could mean that the API is down. 
-You can eamil me, and I will put it back up. Or, you can run it yourself.
+You can eamil me, and I will put it back up. Or, you can run it yourself. To run it using the API i am running, simply run Web_App/index.html.
 
 ### Create 2 workspaces.
 #### In the first Workspace:
