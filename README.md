@@ -18,7 +18,10 @@ You can eamil me, and I will put it back up. Or, you can run it yourself.
 
 ## About our APP
 We found a database of Deaths in the United States on Kaggle.com. We used a machine learning algorithm written by one of our group members in order to be able to tell you with your age, education level, gender, and month of death, what is statistically the most probable way you would die. There are 7 possible answers including Suicide, Homicide, Accident, Natural, Under Investigation, Unknown, and Not Specified. 
+
 The machine learning algorithm we used uses information gain and entropy algorithms to build a decision tree. This tree can answer question posed to it, even if the original data did not have the specific case. 
-We saved this decision tree in a mongodb. Each node is represented as an entry, and it also includes whether the node is a goal node, the goal category, split category if it is not a goal, splitvalue, and left and right children. 
+
+We saved this decision tree in a mongodb. Each node is represented as an entry, and it also includes whether the node is a goal node, the goal category, split category if it is not a goal, splitvalue, and left and right children.
+
 When we get a query, we go to the first node of the tree. if the node is not a goal, we check the split category. we then Compare the value of that category in the request with the splitvalue. If the value of the request is lower than the splitvalue, we go to the left child. If the value is greater, we go to the right child. We continue to do this until we hit a goal, when we return the goalcategory. We return this as a JSON object, which is then written to the screen by the WebApp. 
 
