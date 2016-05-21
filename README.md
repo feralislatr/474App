@@ -5,17 +5,17 @@
 You can eamil me, and I will put it back up. Or, you can run it yourself.
 
 ### Create 2 workspaces.
-### In the first Workspace:
+#### In the first Workspace:
 - go into the folder API_MARK2 and run mongod. 
 - run app.js from API_MARK2
 - you may have to do multiple installs. 
 - npm install express, npm install body-parser, npm install mongoose, npm install mongodb should take care of everything
 
-### In the second Workspace:
+#### In the second Workspace:
 - go into folder Web_App. 
 - in js/death.js, set the API url to whatever your URL is from above.
 - run Web_App/index.html
-- 
+
 ## About our APP
 We found a database of Deaths in the United States on Kaggle.com. We used a machine learning algorithm written by one of our group members in order to be able to tell you with your age, education level, gender, and month of death, what is statistically the most probable way you would die. There are 7 possible answers including Suicide, Homicide, Accident, Natural, Under Investigation, Unknown, and Not Specified. 
 The machine learning algorithm we used uses information gain and entropy algorithms to build a decision tree. This tree can answer question posed to it, even if the original data did not have the specific case. 
