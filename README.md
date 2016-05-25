@@ -22,7 +22,7 @@ We found a database of Deaths in the United States on Kaggle.com. We used a mach
 
 We wrote a data manipulation app, which simply changes the data into medium that can be parsed using the machine learning. for example, combining multiple fields that track the same thing, turning words into numbers (e.g., male ->0, female->1)
 
-The machine learning algorithm we used uses information gain and entropy algorithms to build a decision tree. This tree can answer question posed to it, even if the original data did not have the specific case. 
+The machine learning algorithm we wrote uses information gain and entropy algorithms to build a decision tree. This tree can answer question posed to it, even if the original data did not have the specific case. The core of the machine learning was written by Ryan during an AI class, and he changed it in order to make it work for this project.
 
 We saved this decision tree in a mongodb. Each node is represented as an entry, and it also includes whether the node is a goal node, the goal category, split category if it is not a goal, splitvalue, and left and right children.
 
