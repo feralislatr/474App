@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "a new api",
+  "main": "index.js",
+  "author": "Ryan Serva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "~4.0.0",
+    "mongoose": "~3.6.13"
+    
+  }
+}

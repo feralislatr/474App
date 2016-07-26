@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+/**{*/
+/*    border:dotted 1px white;*/
+/*}*/
+
+html{
+    overflow-x: hidden;
+}
+@font-face{
+    font-family: 'MetalMacabre';
+    src: url('MetalMacabre.ttf'); 
+}
+
+@font-face{
+    font-family: 'Dementia';
+    src: url('Dementia.ttf'); 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #0d0d0d;
+    margin:0;
+    padding:0;
+    color: #fefefe;
+}
+
+
+.hidden{
+    diplay:none;
+    visibility: hidden;
+}
+
+
+#page1{
+    width:100%;
+    float:left;
+}
+.container{
+    width:90%;
+}
+
+
+h1{
+    font-family: 'MetalMacabre', serif;
+    font-size: 750%;
+    max-width: 70%;
+    margin-bottom:70px;
+    margin-top: 10%;
+    line-height: 110%;
+    animation: glow 5s infinite alternate;
+
+}
+
+@keyframes glow {
+    to {
+        text-shadow:1px 7px 20px #000;
+    }
+}
+
+
+.button{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 100%;
+    letter-spacing: 20px;
+    color: #fefefe;
+    background-color:transparent;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding:20px;
+    text-decoration: none;
+    transition: ease .7s;
+    
+}
+
+.button:hover{
+    color:#999;
+    border-color:#999;
+    
+}
+
+.content .ques{
+    font-size: 300%;
+    
+}
+
+input,
+select{
+    display:block;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    margin-top:50px;
+    margin-bottom:100px;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    color:#fefefe;
+    font-size:200%;
+    width:300px;
+    border:none;
+    border-bottom:solid 2px #fefefe;
+}
+
+select{
+    width:200px;
+    background: url(../img/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15px 15px;
+}
+
+input[type="number"]{
+    width: 100px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+section{
+    width:100%;
+    height: 400%;
+    position: relative;
+    background: transparent;
+    overflow:hidden;
+    margin:0;
+    
+}
+
+
+#q0{
+    padding-left:10px;
+}
+
+
+.content{
+    position: absolute;
+    padding: 15px;
+    width:90%;
+    top:10%;
+    /*margin-bottom: -400%;*/
+}
+
+
+#q0{
+    height:400%;
+}
+#q0hero{
+    background:url(../img/deathhero1.jpg) no-repeat top center fixed;
+    height:400%;
+    position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+    background-size: cover;
+	z-index:-1;
+	filter: brightness(20%);
+	-webkit-filter: brightness(20%);
+    width: 100%;
+}
+
+#q1{
+    background-color: #0d0d0d;
+}
+#q2hero{
+    background:url(../img/deathhero2.jpg) no-repeat top center fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+    background-size: cover;
+	z-index:-1;
+	filter: brightness(20%);
+	-webkit-filter: brightness(20%);
+    height: 400%;
+    width: 100%;
+ 
+}
+#q3{
+    background-color: #0d0d0d;
+}
+
+#q4hero{
+    background:url(../img/deathhero5.jpg) no-repeat top center fixed;
+    height:400%;
+    position:absolute;
+	left:-10px;
+	right:0;
+	top:0;
+	bottom:0;
+    background-size: cover;
+	z-index:-1;
+	filter: brightness(20%);
+	-webkit-filter: brightness(20%);
+    width: 100%;
+}
+
+#q5{
+    background-color: #0d0d0d;
+    height:50%;
+    overflow:visible;
+}
+
+/* page 2
+=====================================*/
+
+#page2{
+    width:99%;
+    height:100%;
+    float:right;
+    padding:10px;
+    background-color:transparent;
+    position:relative;
+}
+
+#resulthero{
+    background:url(../img/deathhero6.jpg) no-repeat top center fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+    background-size: cover;
+	z-index:-1;
+	filter: brightness(10%);
+	-webkit-filter: brightness(10%);
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size:600%;
+    /*color:#3d2677;*/
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#results{
+    padding:10px;
+    background-color:transparent;
+}
+
+p{
+    font-size:300%;
+    text-align: center;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding:20px;
+    max-width:50%;
+    margin:0 auto;
+    display: block;
+}
+
+span{
+    
+     font-family: 'MetalMacabre', serif;
+}
+
+#back{
+    margin:0 auto;
+    display:block;
+    height:20px;
+    width:100px;
+    margin-top:30px;
+}
