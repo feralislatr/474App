@@ -1,0 +1,27 @@
+{
+  "name": "web_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feralislatr/474App.git"
+  },
+  "author": "Bri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feralislatr/474App/issues"
+  },
+  "homepage": "https://github.com/feralislatr/474App#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "jquery": "^3.2.1",
+    "http-server":"0.9.0"
+  }
+}

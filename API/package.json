@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "a new api",
+  "main": "index.js",
+  "author": "Ryan Serva",
+  "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:feralislatr/474App.git"
+  },
+  "scripts": {
+  "start": "node app.js"
+  }, 
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.8.6"
+	} 
+  
+}

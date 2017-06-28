@@ -1,0 +1,107 @@
+<div> 
+    <div  id="page1">
+        <div  id="q0">
+            <div id="q0hero"></div>
+                <h1>
+                    how will</br> you die?
+                </h1>
+                
+                <a class="button move" href="#q1" target="_self">
+                    descend
+                </a>
+        </div>
+
+        
+         <section id="q1">
+            <div class="content">
+                <div class="ques">
+                    What is your name?
+                </div>
+                
+                <input type="text" id="a1" ng-model="name" required="true">
+                
+                <a class="button move" href="#q2" target="_self">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+      
+        <section id="q2">
+             <div id="q2hero"></div>
+            <div class="content">
+                <div class="ques">
+                   What is your sex?
+                </div>
+                
+                  <select  id="a2" ng-model="sex" required="true">
+                    <option value = "0">Male</option>
+                    <option value = "1">Female</option>
+                </select>
+                
+                <a class="button move" href="#q3" target="_self">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+        
+        <section id="q3">
+            
+            <div class="content">
+                <div class="ques">
+                    What is your age?
+                </div>
+                
+                <input type="number" id="a3" ng-model="age" required="true">
+                
+                <a class="button move" href="#q4" target="_self">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+        <section id="q4">
+            <div id="q4hero"></div>
+            <div class="content">
+                <div class="ques">
+                    How many years of post-secondary education do you have?
+                </div>
+
+                <input type="number" id="a4" ng-model="edu" required="true">
+               
+                
+                <a class="button move" href="#q5" target="_self">
+                    descend
+                </a>
+            </div>
+        </section>
+        
+        <section id="q5">
+            <div class="content">
+                 <div class="ques">
+                     Choose the month of death   
+                </div>
+                 <select id="a5" ng-model="month" required="true">
+                    <option value = "1">January</option>
+                    <option value = "2">February</option>
+                    <option value = "3">March</option>
+                    <option value = "4">April</option>
+                    <option value = "5">May</option>
+                    <option value = "6">June</option>
+                    <option value = "7">July</option>
+                    <option value = "8">August</option>
+                    <option value = "9">September</option>
+                    <option value = "10">October</option>
+                    <option value = "11">November</option>
+                    <option value = "12">December</option>
+                </select>
+                
+                <a ng-mousedown="getResult()" class="button" id="vertiscroll" ng-href="/#results"> <!-- try ng-href - didn't try scroll-to thing yet-->
+                    next
+                </a>
+            </div>
+        </section>
+  	</div><!--page1-->
+
+<!-- </div> -->

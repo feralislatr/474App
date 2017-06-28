@@ -1,0 +1,17 @@
+version: '2'
+services:
+  data: 
+    build: mongo
+    ports:
+     - "27017:27017"
+  server:
+    build: API
+    ports:
+     - "4200:4200"
+    depends_on:
+     - web-app
+  web-app:
+    build: Web_App
+    ports:
+     - "8080:8080"
+

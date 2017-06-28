@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular/angular-route.min.js"></script>
+       <!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <!--    <script src="scroll.js"></script> -->
+        <script src="death.js"></script>
+        <title>dethcalc</title>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl" id="app">
+        
+            <div id="page1">
+                <div  id="q0">
+                    <div id="q0hero"></div>
+                        <h1>
+                            how will<br> you die?
+                        </h1>
+                        
+                        <a class="button move" href="#q1">
+                            descend
+                        </a>
+                </div>
+        
+                
+                 <section id="q1">
+                    <div class="content">
+                        <div class="ques">
+                            What is your name?
+                        </div>
+                        
+                        <input type="text" id="a1">
+                        
+                        <a class="button move" href="#q2">
+                            descend
+                        </a>
+                    </div>
+                </section>
+                
+              
+                <section id="q2">
+                     <div id="q2hero"></div>
+                    <div class="content">
+                        <div class="ques">
+                           What is your sex?
+                        </div>
+                        
+                          <select  id="a2">
+                            <option value = "0">Male</option>
+                            <option value = "1">Female</option>
+                        </select>
+                        
+                        <a class="button move" href="#q3">
+                            descend
+                        </a>
+                    </div>
+                </section>
+                
+                
+                <section id="q3">
+                    
+                    <div class="content">
+                        <div class="ques">
+                            What is your age?
+                        </div>
+                        
+                        <input type="number" id="a3">
+                        
+                        <a class="button move" href="#q4">
+                            descend
+                        </a>
+                    </div>
+                </section>
+                
+                <section id="q4">
+                    <div id="q4hero"></div>
+                    <div class="content">
+                        <div class="ques">
+                            How many years of post-secondary education do you have?
+                        </div>
+        
+                        <input type="number" id="a4">
+                       
+                        
+                        <a class="button move" href="#q5">
+                            descend
+                        </a>
+                    </div>
+                </section>
+                
+                <section id="q5">
+                    <div class="content">
+                         <div class="ques">
+                             Choose the month of death   
+                        </div>
+                         <select id="a5">
+                            <option value = "1">January</option>
+                            <option value = "2">February</option>
+                            <option value = "3">March</option>
+                            <option value = "4">April</option>
+                            <option value = "5">May</option>
+                            <option value = "6">June</option>
+                            <option value = "7">July</option>
+                            <option value = "8">August</option>
+                            <option value = "9">September</option>
+                            <option value = "10">October</option>
+                            <option value = "11">November</option>
+                            <option value = "12">December</option>
+                        </select>
+                        
+                        <a ng-click="getResult()" class="button" id="scroll" href="#page2"  onclick="scroll()" >
+                            next
+                        </a>
+                    </div>
+                </section>
+          </div><!--page1-->
+          
+          <div id="page2" class="hidden">
+              <div id="resulthero"></div>
+              <div id="results">
+                  <h2>Cause of death: </h2>
+                  <p><span id="result"></span></p>
+                  <a class="button" id="back" href="index.html">
+                      back
+                  </a>
+                  
+             </div>
+          
+          </div><!-- page2 -->
+          
+        </div><!-- ng-app -->
+        
+    </body>
+</html>
