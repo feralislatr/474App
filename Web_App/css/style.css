@@ -234,6 +234,31 @@ section{
     width: 100%;
 }
 
+/*transitions*/
+@keyframes slideInRight {
+    from { 
+        transform:translateX(100%); 
+    }
+    to {
+     transform: translateX(0); 
+    }
+}
+
+@keyframes slideOutLeft {
+    to { 
+        transform: translateX(-100%); 
+    }
+}
+
+#app.ng-enter { 
+    animation: slideInRight 0.5s both all-ease; z-index: 9999; 
+}
+#app.ng-leave { 
+    animation: slideOutLeft 0.5s both all-ease; z-index: 9999; 
+}
+
+
+
 h2{
     font-family: 'Lato', sans-serif;
     font-size:600%;
@@ -242,7 +267,7 @@ h2{
     text-align: center;
 }
 
-#results{
+#resultcontainer{
     padding:10px;
     background-color:transparent;
 }
